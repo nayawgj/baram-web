@@ -1,0 +1,35 @@
+<html>
+  <!--화면에 보이는 요소들 외의 모든 것들(메타정보, 탭에 보이는 제목 설정 등)를 담는 공간-->
+  <style>
+    .hello {
+      background-color: aqua;
+    }
+  </style>
+
+  <head>
+    <!--브라우저 탭에 보이는 제목-->
+    <title>BARAM 빠람빰빰!</title>
+    <meta charset="utf-8" />
+    <!--CSS를 로드하는 태그 : link, style-->
+    <!--link : 외부 리소스(CSS, 폰트)등을 외부에서 가져올 때 사용 -->
+    <link href="style.css" rel="stylesheet" />
+
+    <!--style : CSS를 html 내부에서 직접 적용할 때 사용 -->
+    <style type="text/css">
+      html {
+        background-color: white;
+      }
+    </style>
+
+    <!--Javascript를 로드하는 태그 : script-->
+    <!--외부에서 파일을 가져오거나 직접 내부에서 입력할 수 있음-->
+    <script type="text/javascript" src="script.js" />
+    <script type="text/javascript">
+      console.log("당신 코드에 문제있어?");
+    </script>
+  </head>
+
+  <!-- 화면을 구성하는 요소들을 적는 공간 -->
+  <h1 class="hello">HELLO WORLD;</h1>
+  <body></body>
+</html>
