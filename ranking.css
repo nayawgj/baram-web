@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  height: 200px;
+  height: 170px;
   background-color: mintcream;
 }
 
@@ -94,4 +94,114 @@ header {
   font-size: 12px;
   color: gray;
   margin-left: 10px;
+}
+
+body {
+  background-color: ghostwhite;
+  margin: 0;
+}
+
+#nav {
+  margin: 0px 100px;
+  margin-bottom: 0px;
+  background-color: aliceblue;
+  position: relative;
+}
+
+.rankingText {
+  font-size: 45px;
+  font-weight: lighter;
+}
+
+ul {
+  position: relative;
+  margin-top: 50px;
+}
+
+ul > li {
+  list-style: none;
+  float: left;
+  margin-right: 140px;
+  font-size: 14px;
+  margin-left: -40px;
+  font-weight: bold;
+}
+
+#filters {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+#filters > div {
+  width: 80px;
+  height: 30px;
+  margin-right: 20px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.downArrow {
+  width: 10px;
+  height: 10px;
+  margin-right: 7px;
+}
+
+#contents {
+  margin: 15px 180px 0px 180px;
+  height: 100%;
+  background-color: mintcream;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  width: 250px;
+  height: 300px;
+  margin: 15px 30px;
+  /*background-color: aliceblue;*/
+}
+
+.productImage {
+  background-color: white;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.productImage > img {
+  max-width: 250px;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.productName {
+  font-size: 15px;
+}
+
+.productMaker {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.productFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productPrice {
+  font-size: 13px;
+  line-height: 5px;
+}
+
+.likeButton {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
 }
