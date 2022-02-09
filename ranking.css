@@ -1,13 +1,13 @@
 header {
   width: 100%;
   height: 170px;
-  background-color: mintcream;
+  background-color: #9ce0cf;
 }
 
 #headerLine {
   width: 100%;
   height: 30px;
-  background-color: darkcyan;
+  background-color: cadetblue;
 }
 
 #headerMenu {
@@ -23,7 +23,7 @@ header {
 
 #navigationBar {
   width: 33%;
-  background-color: antiquewhite;
+  /*background-color: antiquewhite;*/
   display: flex;
   justify-content: space-between;
 }
@@ -42,7 +42,7 @@ header {
 
 #userMenu {
   width: 33%;
-  background-color: beige;
+  /*background-color: beige;*/
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -57,7 +57,7 @@ header {
 
 #headerBottom {
   width: 100%;
-  background-color: bisque;
+  /*background-color: aquamarine;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,10 +66,10 @@ header {
 
 #logo {
   height: 70px;
-  margin-left: 150px;
+  margin-left: 120px;
   font-family: "Sitka Heading", serif;
-  font-size: larger;
-  background-color: aquamarine;
+  font-size: 30px;
+  /*background-color: aquamarine;*/
   padding: 5px;
   display: flex;
   align-items: center;
@@ -83,7 +83,7 @@ header {
   width: 170px;
   height: 35px;
   background-color: white;
-  border: 1px solid #101010;
+  border: 1px solid #090909;
   border-radius: 3px;
   margin-right: 10px;
   display: flex;
@@ -97,14 +97,14 @@ header {
 }
 
 body {
-  background-color: ghostwhite;
+  background-color: mintcream;
   margin: 0;
 }
 
 #nav {
   margin: 0px 100px;
   margin-bottom: 0px;
-  background-color: aliceblue;
+  /*background-color: aliceblue;*/
   position: relative;
 }
 
@@ -124,7 +124,7 @@ ul > li {
   margin-right: 140px;
   font-size: 14px;
   margin-left: -40px;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 #filters {
@@ -152,7 +152,6 @@ ul > li {
 #contents {
   margin: 15px 180px 0px 180px;
   height: 100%;
-  background-color: mintcream;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -166,7 +165,7 @@ ul > li {
 }
 
 .productImage {
-  background-color: white;
+  /*background-color: white;*/
   width: 100%;
   height: 200px;
   display: flex;
@@ -204,4 +203,43 @@ ul > li {
   width: 15px;
   height: 15px;
   margin-right: 5px;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  /*background-color: #9ce0cf;*/
+  background-color: cadetblue;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#footerLogo {
+  margin-left: 100px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.baramFooter {
+  font-size: 55px;
+  font-family: "Sitka Heading", serif;
+  margin: 0px;
+}
+
+.baramPhrase {
+  font-size: 20px;
+  font-family: "한컴산뜻돋움", serif;
+  margin: 0;
+}
+
+#footerMenu {
+  display: flex;
+}
+
+#footerMenu > * {
+  color: white;
+  font-size: 15px;
+  margin: 0px 0px 0px 200px;
 }
