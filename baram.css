@@ -1,0 +1,232 @@
+header {
+    width: 100%;
+    height: 170px;
+    background-color: #9ce0cf;
+  }
+  
+  #headerLine {
+    width: 100%;
+    height: 30px;
+    background-color: cadetblue;
+  }
+  
+  #headerMenu {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #leftSpace {
+    width: 33%;
+  }
+  
+  #navigationBar {
+    width: 33%;
+    /*background-color: antiquewhite;*/
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #navigationBar > h5 {
+    font-weight: normal;
+  }
+  
+  .home {
+    margin-right: 30%;
+  }
+  
+  .ranking {
+    margin-right: 30%;
+  }
+  
+  #userMenu {
+    width: 33%;
+    /*background-color: beige;*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 20px;
+  }
+  
+  #userMenu > * {
+    font-size: 11px;
+    margin-left: 25px;
+    font-weight: bold;
+  }
+  
+  #headerBottom {
+    width: 100%;
+    /*background-color: aquamarine;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  #logo {
+    height: 70px;
+    margin-left: 120px;
+    font-family: "Sitka Heading", serif;
+    font-size: 30px;
+    /*background-color: aquamarine;*/
+    padding: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .baram {
+    color: white;
+  }
+  
+  #searchBox {
+    width: 600px;
+    height: 35px;
+    background-color: white;
+    border: 1px solid #090909;
+    border-radius: 2px;
+    padding: 3px;
+    margin-left: 140px; 
+    display: flex;
+    align-items: center;
+  }
+
+  #searchButton {
+      width: 30px;
+      height: 30px;
+      border: 0px;
+      background: white;
+      outline: none;
+      float: right;
+  }
+
+  input{
+      font-size: 16px;
+      width: 600px;
+      padding: 10px;
+      outline: none;
+      float: left;
+      border: 0px;
+  }
+  
+  body {
+    background-color: mintcream;
+    margin: 0;
+  }
+  
+  #banner {
+    width: 100%;
+    height: 300px;
+    background-color: mintcream;
+    display: flex;
+    justify-content: center;
+  }
+
+  #banner > img {
+      width: 80%;
+      height: 300px;
+      margin: 0;
+
+  }
+
+  #userRecommend {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+  }
+  #contents {
+    margin: 100px 30px 0px 30px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product {
+    width: 250px;
+    height: 300px;
+    margin: 15px 30px;
+    /*background-color: aliceblue;*/
+  }
+  
+  .productImage {
+    /*background-color: white;*/
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .productImage > img {
+    max-width: 250px;
+    max-height: 200px;
+    object-fit: contain;
+  }
+  
+  .productName {
+    font-size: 15px;
+  }
+  
+  .productMaker {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  
+  .productFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .productPrice {
+    font-size: 13px;
+    line-height: 5px;
+  }
+  
+  .likeButton {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+  
+  footer {
+    width: 100%;
+    height: 200px;
+    /*background-color: #9ce0cf;*/
+    background-color: cadetblue;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #footerLogo {
+    margin-left: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .baramFooter {
+    font-size: 55px;
+    font-family: "Sitka Heading", serif;
+    margin: 0px;
+  }
+  
+  .baramPhrase {
+    font-size: 20px;
+    font-family: "한컴산뜻돋움", serif;
+    margin: 0;
+  }
+  
+  #footerMenu {
+    display: flex;
+  }
+  
+  #footerMenu > * {
+    color: white;
+    font-size: 15px;
+    margin: 0px 0px 0px 200px;
+  }
+  

@@ -1,38 +1,119 @@
 <html>
-  <!--화면에 보이는 요소들 외의 모든 것들(메타정보, 탭에 보이는 제목 설정 등)를 담는 공간-->
-  <style>
-    .hello {
-      background-color: aqua;
-      color: white;
-    }
-  </style>
 
   <head>
-    <!--브라우저 탭에 보이는 제목-->
-    <title>BARAM 빠람빰빰!</title>
-    <meta charset="utf-8" />
-    <!--CSS를 로드하는 태그 : link, style-->
-    <!--link : 외부 리소스(CSS, 폰트)등을 외부에서 가져올 때 사용 -->
-    <link href="style.css" rel="stylesheet" />
-
-    <!--style : CSS를 html 내부에서 직접 적용할 때 사용 -->
-    <style type="text/css">
-      html {
-        background-color: white;
-      }
-    </style>
-
-    <!--Javascript를 로드하는 태그 : script-->
-    <!--외부에서 파일을 가져오거나 직접 내부에서 입력할 수 있음-->
-    <script type="text/javascript" src="script.js" />
-    <script type="text/javascript">
-      console.log("당신 코드에 문제있어?");
+    <title>BARAM 더 나은 성분을 위한 바람</title> <!--브라우저 탭에 보이는 제목-->
+    <link href="baram.css" rel="stylesheet" /> <!-- css 불러오기-->
+    <script src="baram.js" type="text/javascript"></script>
+    <script>
+      console.log("test");
     </script>
   </head>
 
-  <!-- 화면을 구성하는 요소들을 적는 공간 -->
-  <h1 class="hello">HELLO WORLD;</h1>
-  <h2>제발 되었으면 좋겠닿</h2>
-  <h3>제바아아ㅏ아알</h3>
-  <body></body>
+  <body>
+    <header>
+      <div id="headerLine"></div>
+      <div id="headerMenu">
+        <div id="leftSpace"></div>
+        <div id="navigationBar">
+          <h5 class="home">HOME</h5>
+          <h5 class="ranking">RANKING</h5> <!--ranking.html 로 이동--> 
+          <!-- <a class="ranking" href="ranking.html">RANKING</a> // ranking.html 로 이동-->
+          <h5 class="calender">CALENDER</h5>
+        </div>
+        <div id="userMenu">
+          <p class="like">LIKE</p>
+          <p class="login">LOGIN</p>
+          <p class="mypage">MYPAGE</p>
+        </div>
+        <div id="rightSpace"></div>
+      </div>
+      
+      <div id="headerBottom">
+        <div id="logo">
+          <h1 class="baram">BARAM</h1>
+          <div id="searchBox">
+            <input type="text" placeholder="찾고 싶은 상품을 검색하세요" maxlength="200"/>
+            <button class="searchButton">
+              <img src="./images/icons/loupe.png" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="banner">
+      <img src="./images/products/banner1.png" />
+    </div>
+    <hr/>
+    <div id="userRecommend">
+      <h1>00님 이거 어때요?</h1>
+    </div> 
+    <hr/>
+
+  <div id="contents">
+
+    <div class="product1 product">
+      <div class="productImage">
+        <img src="./images/products/product1.jpg" />
+      </div>
+      <a class="productName">유기농 순면커버 생리대</a>
+      <p class="productMaker">라엘</p>
+      <div class="productFooter">
+        <p class="productPrice">4,290원</p>
+        <img class="likeButton" src="./images/icons/heart.png" />
+      </div>
+    </div>
+
+    <div class="product2 product">
+      <div class="productImage">
+        <img src="./images/products/product2.jpg" />
+      </div>
+      <a class="productName">러브 오버나이트 (중형)</a>
+      <p class="productMaker">시크릿 데이</p>
+      <div class="productFooter">
+        <p class="productPrice">3,500원</p>
+        <img class="likeButton" src="./images/icons/heart.png" />
+      </div>
+    </div>
+
+    <div class="product3 product">
+      <div class="productImage">
+        <img src="./images/products/product3.jpg" />
+      </div>
+      <a class="productName">쏘피 한결 생리대</a>
+      <p class="productMaker">쏘피</p>
+      <div class="productFooter">
+        <p class="productPrice">7,500원</p>
+        <img class="likeButton" src="./images/icons/heart.png" />
+      </div>
+    </div>
+
+    <div class="product4 product">
+      <div class="productImage">
+        <img src="./images/products/product1.jpg" />
+      </div>
+      <a class="productName">유기농 순면커버 생리대</a>
+      <p class="productMaker">라엘</p>
+      <div class="productFooter">
+        <p class="productPrice">4,290원</p>
+        <img class="likeButton" src="./images/icons/heart.png" />
+      </div>
+    </div>
+
+  </div> <!--contents-->
+
+    <footer>
+      <div id="footerLogo">
+        <h1 class="baramFooter">BARAM</h1>
+        <h2 class="baramPhrase">더 나은 성분에 대한 바람</h2>
+      </div>
+      <div id="footerMenu">
+        <a>문의하기</a>
+        <a href="https://github.com/nayawgj/baram-web" target="_blank">Github</a>
+        <p>Copyright ⓒ nayawgj & songah119</p>
+      </div>
+    </footer>
+
+  </body>
+  
 </html>
