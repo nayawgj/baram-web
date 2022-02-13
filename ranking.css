@@ -151,7 +151,7 @@ ul > li {
 
 #contents {
   margin: 15px 180px 0px 180px;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

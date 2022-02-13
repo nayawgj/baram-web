@@ -3,6 +3,7 @@
   <title>카테고리 별 랭킹</title>
   <head>
     <link href="ranking.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!--axios import-->
   </head>
 
   <body>
@@ -59,6 +60,7 @@
     <hr/>
   </div>
   <div id="contents">
+    <!--
     <div class="product1 product">
       <div class="productImage">
         <img src="./images/products/product1.jpg" />
@@ -68,8 +70,7 @@
       <div class="productFooter">
         <p class="productPrice">4,290원</p>
         <img class="likeButton" src="./images/icons/heart.png" />
-      </div>
-      
+      </div>      
     </div>
 
     <div class="product2 product">
@@ -83,6 +84,7 @@
         <img class="likeButton" src="./images/icons/heart.png" />
       </div>
     </div>
+
     <div class="product3 product">
       <div class="productImage">
         <img src="./images/products/product3.jpg" />
@@ -94,6 +96,7 @@
         <img class="likeButton" src="./images/icons/heart.png" />
       </div>
     </div>
+
     <div class="product4 product">
       <div class="productImage">
         <img src="./images/products/product1.jpg" />
@@ -116,6 +119,7 @@
         <img class="likeButton" src="./images/icons/heart.png" />
       </div>
     </div>
+
     <div class="product6 product">
       <div class="productImage">
         <img src="./images/products/product1.jpg" />
@@ -127,6 +131,8 @@
         <img class="likeButton" src="./images/icons/heart.png" />
       </div>
     </div>
+    -->
+    
   </div>
   <footer>
     <div id="footerLogo">
@@ -140,4 +146,36 @@
     </div>
   </footer>
   </body>
+
+  <script>
+    axios.get('https://c83ab4f8-341f-4104-a6ee-7689882bf922.mock.pstmn.io/products')
+    .then(function(result){
+      console.log('통신 결과: ', result);
+      const products = result.data.products;
+      let productsHtml = '';
+    for(var i=0; i<products.length; i++){
+      let product = products[i];
+      productsHtml = productsHtml + 
+      '<div class="product">'+
+      '<div class="productImage">'+
+        '<img src="' + product.imageUrl + '" />'+
+      '</div>'+
+      '<a class="productName">' + product.name + '</a>'+
+      '<p class="productMaker">' + product.maker + '</p>'+
+      '<div class="productFooter">'+
+        '<p class="productPrice">' + product.price + '원</p>'+
+        '<img class="likeButton" src="./images/icons/heart.png" />'+
+      '</div>'+
+      '</div>';
+    }
+
+    document.querySelector('#contents').innerHTML = productsHtml;
+    }).catch(function(error){
+      console.error('error 발생: ', error);
+    });
+    
+
+    
+    
+  </script>
 </html>
