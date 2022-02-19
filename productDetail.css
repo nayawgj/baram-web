@@ -98,6 +98,106 @@ header {
     margin: 0;
   }
 
+  #productInfo {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 250px;
+    margin-top: 100px;
+  }
+
+  .productImg > img{ /*상세 제품 이미지*/
+    max-width: 600px;
+    max-height: 600px;
+    object-fit: contain;
+  }
+  
+  .productInfo{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    justify-content: center;
+  }
+
+  .productName {
+    font-size: 40px;
+    margin: 0px;
+  }
+
+  .productStar {
+    margin-top: 30px;
+    display : flex;
+  }
+  .productStar > img {
+    max-width:20px;
+    max-height:20px;
+  }
+  .reviewNum {
+    font-size: 15px;
+    margin:0px;
+    margin-left: 30px;
+  }
+
+  .productPrice {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .productComposition {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .detailComposition {
+    width:100%;
+    display: flex;
+    margin-top: 10px;
+  }
+
+.carcinogen { /*8대 발암물질*/
+  height:100%;
+  width: 100px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.carcinogen > img {
+  max-width:50px;
+  max-height:50px;
+}
+  
+.harmfulIngredients { /*주의 성분*/
+  height:100%;
+  width: 100px;
+  font-size: 15px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.harmfulIngredients > img {
+  max-width:50px;
+  max-height:50px;
+}
+
+.organic { /*유기농*/
+  height:100%;
+  width: 100px;
+  font-size: 15px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.organic > img {
+  max-width:50px;
+  max-height:50px;
+}
   #review {
       height: 100%;
       display: flex;
@@ -187,14 +287,14 @@ header {
     justify-content: center;
   }
   
-  .product {
+  .recProduct {
     width: 250px;
     height: 300px;
     margin: 15px 30px;
     /*background-color: aliceblue;*/
   }
   
-  .productImage {
+  .recProductImage { /*추천 상품 이미지*/
     /*background-color: white;*/
     width: 100%;
     height: 200px;
@@ -203,28 +303,28 @@ header {
     margin-bottom: 10px;
   }
   
-  .productImage > img {
+  .recProductImage > img {
     max-width: 250px;
     max-height: 200px;
     object-fit: contain;
   }
   
-  .productName {
+  .recProductName {
     font-size: 15px;
   }
   
-  .productMaker {
+  .recProductMaker {
     font-size: 13px;
     font-weight: bold;
   }
   
-  .productFooter {
+  .recProductFooter {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  .productPrice {
+  .recProductPrice {
     font-size: 13px;
     line-height: 5px;
   }
