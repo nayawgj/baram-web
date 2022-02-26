@@ -1,6 +1,21 @@
-//import "./index.css";
+import React from "react";
+import "./index.css";
+import axios from "axios";
+import {Link} from 'react-router-dom';
 
 function MainPage() {
+  const[products, setProducts]=React.useState([]);
+  React.useEffect(
+    function(){
+      axios.get('https://c83ab4f8-341f-4104-a6ee-7689882bf922.mock.pstmn.io/products').then(function(result){
+      console.log('통신 결과: ', result);
+      const products = result.data.products;
+      setProducts(products);
+    }).catch(function (error){
+      console.error("에러발생: ",error);
+    });
+    },[]);
+    
     return (
       <div>
         <header>
@@ -9,7 +24,7 @@ function MainPage() {
             <div id="leftSpace"></div>
             <div id="navigationBar">
               <h5 class="home">HOME</h5>
-              <h5 class="ranking">RANKING</h5>
+              <h5 class="ranking">RANKING</h5> 
               <h5 class="calender">CALENDER</h5>
             </div>
             <div id="userMenu">
@@ -19,7 +34,7 @@ function MainPage() {
             </div>
             <div id="rightSpace"></div>
           </div>
-  
+
           <div id="headerBottom">
             <div id="logo">
               <h1 class="baram">BARAM</h1>
@@ -36,7 +51,7 @@ function MainPage() {
             </div>
           </div>
         </header>
-  
+
         <div id="banner">
           <img src="./images/products/banner1.png" />
         </div>
@@ -45,57 +60,29 @@ function MainPage() {
           <h1>00님 이거 어때요?</h1>
         </div>
         <hr />
-  
+
         <div id="contents">
-          <div class="product1 product">
-            <div class="productImage">
-              <img src="./images/products/product1.jpg" />
-            </div>
-            <a class="productName">유기농 순면커버 생리대</a>
-            <p class="productMaker">라엘</p>
-            <div class="productFooter">
-              <p class="productPrice">4,290원</p>
-              <img class="likeButton" src="./images/icons/heart.png" />
-            </div>
-          </div>
-  
-          <div class="product2 product">
-            <div class="productImage">
-              <img src="./images/products/product2.jpg" />
-            </div>
-            <a class="productName">러브 오버나이트 (중형)</a>
-            <p class="productMaker">시크릿 데이</p>
-            <div class="productFooter">
-              <p class="productPrice">3,500원</p>
-              <img class="likeButton" src="./images/icons/heart.png" />
-            </div>
-          </div>
-  
-          <div class="product3 product">
-            <div class="productImage">
-              <img src="./images/products/product3.jpg" />
-            </div>
-            <a class="productName">쏘피 한결 생리대</a>
-            <p class="productMaker">쏘피</p>
-            <div class="productFooter">
-              <p class="productPrice">7,500원</p>
-              <img class="likeButton" src="./images/icons/heart.png" />
-            </div>
-          </div>
-  
-          <div class="product4 product">
-            <div class="productImage">
-              <img src="./images/products/product1.jpg" />
-            </div>
-            <a class="productName">유기농 순면커버 생리대</a>
-            <p class="productMaker">라엘</p>
-            <div class="productFooter">
-              <p class="productPrice">4,290원</p>
-              <img class="likeButton" src="./images/icons/heart.png" />
-            </div>
-          </div>
+          {
+            products.map(function(product, index){
+              return (
+                <div className="product1">
+                  <Link className="productDetailLink" to={'/productDetail'}>
+                  <div class="productImage">
+                    <img src={product.imageUrl} />
+                  </div>
+                  <a class="productName">{product.name}</a>
+                  <p class="productMaker">{product.maker}</p>
+                  <div class="productFooter">
+                    <p class="productPrice">{product.price}원</p>
+                    <img class="likeButton" src="./images/icons/heart.png" />
+                  </div>
+                  </Link>
+                </div>
+              );
+            })
+          }
         </div>
-  
+
         <footer>
           <div id="footerLogo">
             <h1 class="baramFooter">BARAM</h1>
@@ -103,9 +90,7 @@ function MainPage() {
           </div>
           <div id="footerMenu">
             <a>문의하기</a>
-            <a href="https://github.com/nayawgj/baram-web" target="_blank">
-              Github
-            </a>
+            <a href="https://github.com/nayawgj/baram-web" target="_blank">Github</a>
             <p>Copyright ⓒ nayawgj & songah119</p>
           </div>
         </footer>
