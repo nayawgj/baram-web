@@ -28,16 +28,23 @@ header {
   justify-content: space-between;
 }
 
-#navigationBar > h5 {
-  font-weight: normal;
+.linkStyle {
+  text-decoration: inherit;
+  color: inherit;
 }
 
 .home {
   margin-right: 30%;
+  font-weight: normal;
 }
 
 .ranking {
   margin-right: 30%;
+  font-weight: normal;
+}
+
+.calender {
+  font-weight: normal;
 }
 
 #userMenu {
@@ -79,7 +86,7 @@ header {
   color: white;
 }
 
-#searchBox {
+#bigSearchBox {
   width: 600px;
   height: 35px;
   background-color: white;
@@ -100,7 +107,7 @@ header {
   float: right;
 }
 
-input {
+#bigSearchBox input {
   font-size: 16px;
   width: 600px;
   padding: 10px;
@@ -230,7 +237,7 @@ footer {
   margin: 0px 0px 0px 200px;
 }
 
-.productDetailLink{
+.productDetailLink {
   color: inherit;
   text-decoration: none;
 }

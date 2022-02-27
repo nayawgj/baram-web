@@ -80,20 +80,34 @@ header {
 }
 
 #searchBox {
-  width: 170px;
-  height: 35px;
+  width: 250px;
+  height: 30px;
   background-color: white;
   border: 1px solid #090909;
-  border-radius: 3px;
+  border-radius: 2px;
+  /*margin-left: 83%;*/
+  padding: 3px;
   margin-right: 10px;
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
 }
 
-.searchText {
-  font-size: 12px;
-  color: gray;
-  margin-left: 10px;
+.searchButton {
+  width: 30px;
+  height: 30px;
+  border: 0px;
+  background: white;
+  outline: none;
+  float: right;
+}
+
+input {
+  font-size: 13px;
+  width: 200px;
+  padding: 8px;
+  outline: none;
+  float: left;
+  border: 0px;
 }
 
 body {

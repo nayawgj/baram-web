@@ -27,13 +27,13 @@ function Ranking() {
         <div id="headerMenu">
           <div id="leftSpace"></div>
           <div id="navigationBar">
-            <Link className="mainLink" to={"/"}>
+            <Link className="mainLink linkStyle" to={"/"}>
               <h5 class="home">HOME</h5>
             </Link>
-            <Link className="rankingLink" to={"/ranking"}>
+            <Link className="rankingLink linkStyle" to={"/ranking"}>
               <h5 class="ranking">RANKING</h5>
             </Link>
-            <Link className="calenderLink" to={"/calender"}>
+            <Link className="calenderLink linkStyle" to={"/calender"}>
               <h5 class="calender">CALENDER</h5>
             </Link>
           </div>
@@ -48,7 +48,10 @@ function Ranking() {
             <h1 class="baram">BARAM</h1>
           </div>
           <div id="searchBox">
-            <p class="searchText">검색</p>
+            <input type="text" placeholder="상품검색" maxlength="100" />
+            <button class="searchButton">
+              <img src="./images/icons/loupe.png" />
+            </button>
           </div>
         </div>
       </header>

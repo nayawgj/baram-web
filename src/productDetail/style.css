@@ -1,46 +1,43 @@
-header {
+@charset "UTF-8";
+#productDetailPage {
+  /* 상품 정보 */
+  /* 리뷰 */
+}
+#productDetailPage header {
   width: 100%;
-  height: 150px;
+  height: 170px;
   background-color: #9ce0cf;
 }
-
-#headerLine {
+#productDetailPage #headerLine {
   width: 100%;
   height: 30px;
   background-color: cadetblue;
 }
-
-#headerMenu {
+#productDetailPage #headerMenu {
   width: 100%;
   height: 50px;
   display: flex;
   justify-content: center;
 }
-
-#leftSpace {
+#productDetailPage #leftSpace {
   width: 33%;
 }
-
-#navigationBar {
+#productDetailPage #navigationBar {
   width: 33%;
   /*background-color: antiquewhite;*/
   display: flex;
   justify-content: space-between;
 }
-
-#navigationBar > h5 {
+#productDetailPage #navigationBar > h5 {
   font-weight: normal;
 }
-
-.home {
+#productDetailPage .home {
   margin-right: 30%;
 }
-
-.ranking {
+#productDetailPage .ranking {
   margin-right: 30%;
 }
-
-#userMenu {
+#productDetailPage #userMenu {
   width: 33%;
   /*background-color: beige;*/
   display: flex;
@@ -48,22 +45,20 @@ header {
   align-items: flex-end;
   padding-right: 20px;
 }
-
-#userMenu > * {
+#productDetailPage #userMenu > * {
   font-size: 11px;
   margin-left: 25px;
   font-weight: bold;
 }
-
-#headerBottom {
+#productDetailPage #headerBottom {
   width: 100%;
   /*background-color: aquamarine;*/
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
 }
-
-#logo {
+#productDetailPage #logo {
   height: 70px;
   margin-left: 120px;
   font-family: "Sitka Heading", serif;
@@ -73,20 +68,19 @@ header {
   display: flex;
   align-items: center;
 }
-
-#searchBox {
+#productDetailPage #searchBox {
   width: 250px;
   height: 30px;
   background-color: white;
   border: 1px solid #090909;
   border-radius: 2px;
-  margin-left: 83%;
+  /*margin-left: 83%;*/
   padding: 3px;
-  margin-right: 200px;
+  /*margin-right: 200px;*/
   display: flex;
+  justify-content: flex-end;
 }
-
-#searchButton {
+#productDetailPage #searchButton {
   width: 30px;
   height: 30px;
   border: 0px;
@@ -94,8 +88,7 @@ header {
   outline: none;
   float: right;
 }
-
-input {
+#productDetailPage input {
   font-size: 13px;
   width: 200px;
   padding: 8px;
@@ -103,14 +96,11 @@ input {
   float: left;
   border: 0px;
 }
-
-body {
+#productDetailPage body {
   background-color: mintcream;
   margin: 0;
 }
-
-/* 상품 정보 */
-#productInfo {
+#productDetailPage #productInfo {
   width: 100%;
   height: 500px;
   display: flex;
@@ -118,15 +108,13 @@ body {
   margin-left: 250px;
   margin-top: 100px;
 }
-
-#productInfo .productImg > img {
+#productDetailPage .productImg > img {
   /*상세 제품 이미지*/
   max-width: 600px;
   max-height: 600px;
   object-fit: contain;
 }
-
-#productInfo .productInfo {
+#productDetailPage .productInfo {
   height: 300px;
   width: 100%;
   display: flex;
@@ -134,44 +122,38 @@ body {
   margin-left: 100px;
   justify-content: center;
 }
-
-#productInfo .productName {
+#productDetailPage .productName {
   font-size: 40px;
   margin: 0px;
 }
-
-#productInfo .productStar {
+#productDetailPage .productStar {
   margin-top: 30px;
   display: flex;
 }
-#productInfo .productStar > img {
+#productDetailPage .productStar > img {
   max-width: 20px;
   max-height: 20px;
 }
-#productInfo .reviewNum {
+#productDetailPage .reviewNum {
   font-size: 15px;
   margin: 0px;
   margin-left: 30px;
 }
-
-#productInfo .productPrice {
+#productDetailPage .productPrice {
   font-size: 20px;
   margin-top: 10px;
 }
-
-#productInfo .productComposition {
+#productDetailPage .productComposition {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
 }
-
-#productInfo .detailComposition {
+#productDetailPage .detailComposition {
   width: 100%;
   display: flex;
   margin-top: 10px;
 }
-
-#productInfo .carcinogen {
+#productDetailPage .carcinogen {
   /*8대 발암물질*/
   height: 100%;
   width: 100px;
@@ -179,13 +161,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-#productInfo .carcinogen > img {
+#productDetailPage .carcinogen > img {
   max-width: 50px;
   max-height: 50px;
 }
-
-#productInfo .harmfulIngredients {
+#productDetailPage .harmfulIngredients {
   /*주의 성분*/
   height: 100%;
   width: 100px;
@@ -194,13 +174,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-#productInfo .harmfulIngredients > img {
+#productDetailPage .harmfulIngredients > img {
   max-width: 50px;
   max-height: 50px;
 }
-
-#productInfo .organic {
+#productDetailPage .organic {
   /*유기농*/
   height: 100%;
   width: 100px;
@@ -209,95 +187,79 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-#productInfo .organic > img {
+#productDetailPage .organic > img {
   max-width: 50px;
   max-height: 50px;
 }
-
-/* 리뷰 */
-
-#review {
+#productDetailPage #review {
   height: 100%;
   display: flex;
   flex-direction: column;
   margin-left: 30px;
 }
-
-.totalReviewStar {
+#productDetailPage .totalReviewStar {
   width: 200px;
   height: 20px;
   display: flex;
   justify-content: flex-start;
 }
-
-.totalReviewStar > img {
+#productDetailPage .totalReviewStar > img {
   max-width: 20px;
   max-height: 20px;
   object-fit: contain;
 }
-
-.totalStarScore {
+#productDetailPage .totalStarScore {
   font-size: 15px;
   object-fit: contain;
 }
-
-.review {
+#productDetailPage .review {
   height: 400px;
   width: 50%;
   display: flex;
   justify-content: flex-start;
 }
-
-.profileImg {
+#productDetailPage .profileImg {
   height: 100px;
   width: 60px;
   display: flex;
 }
-
-.profileImg > img {
+#productDetailPage .profileImg > img {
   max-width: 60px;
   max-height: 60px;
   object-fit: contain;
 }
-
-.profileInfo {
+#productDetailPage .profileInfo {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-left: 20px;
 }
-
-.userName {
+#productDetailPage .userName {
   font-size: 20px;
   display: flex;
   margin: 1px;
 }
-
-.userChar {
+#productDetailPage .userChar {
   font-size: 10px;
   display: flex;
   margin: 1px;
 }
-.userStarScore > img {
+#productDetailPage .userStarScore > img {
   max-width: 150px;
   max-height: 15px;
   object-fit: contain;
 }
-
-.reviewContent {
+#productDetailPage .reviewContent {
   font-size: 18px;
 }
-
-#userRecommend {
+#productDetailPage #userRecommend {
   width: 100%;
   height: 20px;
   display: flex;
   justify-content: center;
 }
-
-#contents {
+#productDetailPage #contents {
   margin: 100px 30px 0px 30px;
   width: 100%;
   height: 400px;
@@ -305,15 +267,13 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.recProduct {
+#productDetailPage .recProduct {
   width: 250px;
   height: 300px;
   margin: 15px 30px;
   /*background-color: aliceblue;*/
 }
-
-.recProductImage {
+#productDetailPage .recProductImage {
   /*추천 상품 이미지*/
   /*background-color: white;*/
   width: 100%;
@@ -322,40 +282,33 @@ body {
   justify-content: center;
   margin-bottom: 10px;
 }
-
-.recProductImage > img {
+#productDetailPage .recProductImage > img {
   max-width: 250px;
   max-height: 200px;
   object-fit: contain;
 }
-
-.recProductName {
+#productDetailPage .recProductName {
   font-size: 15px;
 }
-
-.recProductMaker {
+#productDetailPage .recProductMaker {
   font-size: 13px;
   font-weight: bold;
 }
-
-.recProductFooter {
+#productDetailPage .recProductFooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.recProductPrice {
+#productDetailPage .recProductPrice {
   font-size: 13px;
   line-height: 5px;
 }
-
-.likeButton {
+#productDetailPage .likeButton {
   width: 15px;
   height: 15px;
   margin-right: 5px;
 }
-
-footer {
+#productDetailPage footer {
   width: 100%;
   height: 200px;
   /*background-color: #9ce0cf;*/
@@ -364,32 +317,29 @@ footer {
   display: flex;
   align-items: center;
 }
-
-#footerLogo {
+#productDetailPage #footerLogo {
   margin-left: 100px;
   color: white;
   display: flex;
   flex-direction: column;
 }
-
-.baramFooter {
+#productDetailPage .baramFooter {
   font-size: 55px;
   font-family: "Sitka Heading", serif;
   margin: 0px;
 }
-
-.baramPhrase {
+#productDetailPage .baramPhrase {
   font-size: 20px;
   font-family: "한컴산뜻돋움", serif;
   margin: 0;
 }
-
-#footerMenu {
+#productDetailPage #footerMenu {
   display: flex;
 }
-
-#footerMenu > * {
+#productDetailPage #footerMenu > * {
   color: white;
   font-size: 15px;
   margin: 0px 0px 0px 200px;
 }
+
+/*# sourceMappingURL=style.css.map */

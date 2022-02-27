@@ -27,13 +27,13 @@ function MainPage() {
         <div id="headerMenu">
           <div id="leftSpace"></div>
           <div id="navigationBar">
-            <Link className="mainLink" to={"/"}>
+            <Link className="mainLink linkStyle" to={"/"}>
               <h5 class="home">HOME</h5>
             </Link>
-            <Link className="rankingLink" to={"/ranking"}>
+            <Link className="rankingLink linkStyle" to={"/ranking"}>
               <h5 class="ranking">RANKING</h5>
             </Link>
-            <Link className="calenderLink" to={"/calender"}>
+            <Link className="calenderLink linkStyle" to={"/calender"}>
               <h5 class="calender">CALENDER</h5>
             </Link>
           </div>
@@ -48,7 +48,7 @@ function MainPage() {
         <div id="headerBottom">
           <div id="logo">
             <h1 class="baram">BARAM</h1>
-            <div id="searchBox">
+            <div id="bigSearchBox">
               <input
                 type="text"
                 placeholder="찾고 싶은 상품을 검색하세요"
