@@ -81,11 +81,11 @@ function MainPage() {
                 </div>
                 <a class="productName">{product.name}</a>
                 <p class="productMaker">{product.maker}</p>
-                <div class="productFooter">
-                  <p class="productPrice">{product.price}원</p>
-                  <img class="likeButton" src="./images/icons/heart.png" />
-                </div>
               </Link>
+              <div class="productFooter">
+                <p class="productPrice">{product.price}원</p>
+                <img class="likeButton" src="./images/icons/heart.png" />
+              </div>
             </div>
           );
         })}
