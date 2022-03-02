@@ -1,7 +1,7 @@
 @charset "UTF-8";
 #productDetailPage {
-  /* 상품 정보 */
-  /* 리뷰 */
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 #productDetailPage header {
   width: 100%;
