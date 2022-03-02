@@ -1,45 +1,46 @@
-header {
+#productDetailPage {
+  header {
     width: 100%;
     height: 150px;
     background-color: #9ce0cf;
   }
-  
+
   #headerLine {
     width: 100%;
     height: 30px;
     background-color: cadetblue;
   }
-  
+
   #headerMenu {
     width: 100%;
     height: 50px;
     display: flex;
     justify-content: center;
   }
-  
+
   #leftSpace {
     width: 33%;
   }
-  
+
   #navigationBar {
     width: 33%;
     /*background-color: antiquewhite;*/
     display: flex;
     justify-content: space-between;
   }
-  
+
   #navigationBar > h5 {
     font-weight: normal;
   }
-  
+
   .home {
     margin-right: 30%;
   }
-  
+
   .ranking {
     margin-right: 30%;
   }
-  
+
   #userMenu {
     width: 33%;
     /*background-color: beige;*/
@@ -48,13 +49,13 @@ header {
     align-items: flex-end;
     padding-right: 20px;
   }
-  
+
   #userMenu > * {
     font-size: 11px;
     margin-left: 25px;
     font-weight: bold;
   }
-  
+
   #headerBottom {
     width: 100%;
     /*background-color: aquamarine;*/
@@ -62,8 +63,13 @@ header {
     justify-content: space-between;
     position: relative;
   }
+<<<<<<< HEAD:src/productDetail/productDetail.css
   
   #minisearchBox {
+=======
+
+  #searchBox {
+>>>>>>> a76b99b9dd8630393a729d300700142c48517709:src/productDetail/style.scss
     width: 250px;
     height: 30px;
     background-color: white;
@@ -71,10 +77,11 @@ header {
     border-radius: 2px;
     margin-left: 82%;
     padding: 3px;
-    margin-right: 200px; 
+    margin-right: 200px;
     display: flex;
   }
 
+<<<<<<< HEAD:src/productDetail/productDetail.css
   .minisearchButton {
       width: 30px;
       height: 30px;
@@ -82,15 +89,24 @@ header {
       background: white;
       outline: none;
       float: right;
+=======
+  #searchButton {
+    width: 30px;
+    height: 30px;
+    border: 0px;
+    background: white;
+    outline: none;
+    float: right;
+>>>>>>> a76b99b9dd8630393a729d300700142c48517709:src/productDetail/style.scss
   }
 
-  input{
-      font-size: 13px;
-      width: 200px;
-      padding: 8px;
-      outline: none;
-      float: left;
-      border: 0px;
+  input {
+    font-size: 13px;
+    width: 200px;
+    padding: 8px;
+    outline: none;
+    float: left;
+    border: 0px;
   }
 
   body {
@@ -98,6 +114,7 @@ header {
     margin: 0;
   }
 
+  /* 상품 정보 */
   #productInfo {
     width: 100%;
     height: 500px;
@@ -107,13 +124,14 @@ header {
     margin-top: 100px;
   }
 
-  .productImg > img{ /*상세 제품 이미지*/
+  .productImg > img {
+    /*상세 제품 이미지*/
     max-width: 600px;
     max-height: 600px;
     object-fit: contain;
   }
-  
-  .productInfo{
+
+  .productInfo {
     height: 300px;
     width: 100%;
     display: flex;
@@ -129,15 +147,15 @@ header {
 
   .productStar {
     margin-top: 30px;
-    display : flex;
+    display: flex;
   }
   .productStar > img {
-    max-width:20px;
-    max-height:20px;
+    max-width: 20px;
+    max-height: 20px;
   }
   .reviewNum {
     font-size: 15px;
-    margin:0px;
+    margin: 0px;
     margin-left: 30px;
   }
 
@@ -153,63 +171,69 @@ header {
   }
 
   .detailComposition {
-    width:100%;
+    width: 100%;
     display: flex;
     margin-top: 10px;
   }
 
-.carcinogen { /*8대 발암물질*/
-  height:100%;
-  width: 100px;
-  font-size: 15px;
-  display: flex;
-  flex-direction: column;
-}
+  .carcinogen {
+    /*8대 발암물질*/
+    height: 100%;
+    width: 100px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+  }
 
-.carcinogen > img {
-  max-width:50px;
-  max-height:50px;
-}
-  
-.harmfulIngredients { /*주의 성분*/
-  height:100%;
-  width: 100px;
-  font-size: 15px;
-  margin-left: 20px;
-  display: flex;
-  flex-direction: column;
-}
+  .carcinogen > img {
+    max-width: 50px;
+    max-height: 50px;
+  }
 
-.harmfulIngredients > img {
-  max-width:50px;
-  max-height:50px;
-}
+  .harmfulIngredients {
+    /*주의 성분*/
+    height: 100%;
+    width: 100px;
+    font-size: 15px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
 
-.organic { /*유기농*/
-  height:100%;
-  width: 100px;
-  font-size: 15px;
-  margin-left: 20px;
-  display: flex;
-  flex-direction: column;
-}
+  .harmfulIngredients > img {
+    max-width: 50px;
+    max-height: 50px;
+  }
 
-.organic > img {
-  max-width:50px;
-  max-height:50px;
-}
+  .organic {
+    /*유기농*/
+    height: 100%;
+    width: 100px;
+    font-size: 15px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .organic > img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  /* 리뷰 */
+
   #review {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      margin-left: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
   }
 
   .totalReviewStar {
-      width:200px;
-      height:20px;
-      display: flex;
-      justify-content: flex-start;
+    width: 200px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .totalReviewStar > img {
@@ -224,10 +248,10 @@ header {
   }
 
   .review {
-      height:400px;
-      width: 50%;
-      display: flex;
-      justify-content: flex-start;
+    height: 400px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .profileImg {
@@ -243,23 +267,23 @@ header {
   }
 
   .profileInfo {
-      height: 100%;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      margin-left:20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
   }
 
   .userName {
-      font-size: 20px;
-      display: flex;
-      margin: 1px;
+    font-size: 20px;
+    display: flex;
+    margin: 1px;
   }
 
   .userChar {
-      font-size: 10px;
-      display: flex;
-      margin: 1px;
+    font-size: 10px;
+    display: flex;
+    margin: 1px;
   }
   .userStarScore > img {
     max-width: 150px;
@@ -267,15 +291,15 @@ header {
     object-fit: contain;
   }
 
-  .reviewContent{
-      font-size: 18px;
+  .reviewContent {
+    font-size: 18px;
   }
 
   #userRecommend {
-      width: 100%;
-      height: 20px;
-      display: flex;
-      justify-content: center;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
   }
 
   #contents {
@@ -286,15 +310,16 @@ header {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .recProduct {
     width: 250px;
     height: 300px;
     margin: 15px 30px;
     /*background-color: aliceblue;*/
   }
-  
-  .recProductImage { /*추천 상품 이미지*/
+
+  .recProductImage {
+    /*추천 상품 이미지*/
     /*background-color: white;*/
     width: 100%;
     height: 200px;
@@ -302,39 +327,39 @@ header {
     justify-content: center;
     margin-bottom: 10px;
   }
-  
+
   .recProductImage > img {
     max-width: 250px;
     max-height: 200px;
     object-fit: contain;
   }
-  
+
   .recProductName {
     font-size: 15px;
   }
-  
+
   .recProductMaker {
     font-size: 13px;
     font-weight: bold;
   }
-  
+
   .recProductFooter {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .recProductPrice {
     font-size: 13px;
     line-height: 5px;
   }
-  
+
   .likeButton {
     width: 15px;
     height: 15px;
     margin-right: 5px;
   }
-  
+
   footer {
     width: 100%;
     height: 200px;
@@ -344,33 +369,33 @@ header {
     display: flex;
     align-items: center;
   }
-  
+
   #footerLogo {
     margin-left: 100px;
     color: white;
     display: flex;
     flex-direction: column;
   }
-  
+
   .baramFooter {
     font-size: 55px;
     font-family: "Sitka Heading", serif;
     margin: 0px;
   }
-  
+
   .baramPhrase {
     font-size: 20px;
     font-family: "한컴산뜻돋움", serif;
     margin: 0;
   }
-  
+
   #footerMenu {
     display: flex;
   }
-  
+
   #footerMenu > * {
     color: white;
     font-size: 15px;
     margin: 0px 0px 0px 200px;
   }
-  
+}

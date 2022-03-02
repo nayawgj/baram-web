@@ -1,9 +1,8 @@
 import "./App.css";
-import "./main/index.css";
-import "./productDetail/productDetail.css";
 import MainPageComponent from "./main";
-import {Switch, Route} from 'react-router-dom';
-import ProductDetail from "./productDetail/productDetail.js";
+import { Switch, Route } from "react-router-dom";
+import ProductDetail from "./productDetail";
+import Ranking from "./ranking";
 
 function App() {
   return (
@@ -14,6 +13,9 @@ function App() {
         </Route>
         <Route exact={true} path="/productDetail">
           <ProductDetail />
+        </Route>
+        <Route exact={true} path="/ranking">
+          <Ranking />
         </Route>
       </Switch>
     </div>

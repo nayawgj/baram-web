@@ -1,4 +1,7 @@
-html, body, #root, #root>div {
-    height: 100vh;
-    width: 100vw;
+html,
+body,
+#root,
+#root > div {
+  height: 100%;
+  width: 100%;
 }
