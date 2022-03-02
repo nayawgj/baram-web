@@ -63,19 +63,19 @@ header {
     position: relative;
   }
   
-  #searchBox {
+  #minisearchBox {
     width: 250px;
     height: 30px;
     background-color: white;
     border: 1px solid #090909;
     border-radius: 2px;
-    margin-left: 83%;
+    margin-left: 82%;
     padding: 3px;
     margin-right: 200px; 
     display: flex;
   }
 
-  #searchButton {
+  .minisearchButton {
       width: 30px;
       height: 30px;
       border: 0px;

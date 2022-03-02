@@ -23,28 +23,28 @@ function MainPage() {
           <div id="headerMenu">
             <div id="leftSpace"></div>
             <div id="navigationBar">
-              <h5 class="home">HOME</h5>
-              <h5 class="ranking">RANKING</h5> 
-              <h5 class="calender">CALENDER</h5>
+              <h5 className="home">HOME</h5>
+              <h5 className="ranking">RANKING</h5> 
+              <h5 className="calender">CALENDER</h5>
             </div>
             <div id="userMenu">
-              <p class="like">LIKE</p>
-              <p class="login">LOGIN</p>
-              <p class="mypage">MYPAGE</p>
+              <p className="like">LIKE</p>
+              <p className="login">LOGIN</p>
+              <p className="mypage">MYPAGE</p>
             </div>
             <div id="rightSpace"></div>
           </div>
 
           <div id="headerBottom">
             <div id="logo">
-              <h1 class="baram">BARAM</h1>
+              <h1 className="baram">BARAM</h1>
               <div id="searchBox">
                 <input
                   type="text"
                   placeholder="찾고 싶은 상품을 검색하세요"
-                  maxlength="200"
+                  maxLength="200"
                 />
-                <button class="searchButton">
+                <button id="searchButton">
                   <img src="./images/icons/loupe.png" />
                 </button>
               </div>
@@ -67,14 +67,14 @@ function MainPage() {
               return (
                 <div className="product1">
                   <Link className="productDetailLink" to={'/productDetail'}>
-                  <div class="productImage">
+                  <div className="productImage">
                     <img src={product.imageUrl} />
                   </div>
-                  <a class="productName">{product.name}</a>
-                  <p class="productMaker">{product.maker}</p>
-                  <div class="productFooter">
-                    <p class="productPrice">{product.price}원</p>
-                    <img class="likeButton" src="./images/icons/heart.png" />
+                  <p className="productName">{product.name}</p>
+                  <p className="productMaker">{product.maker}</p>
+                  <div className="productFooter">
+                    <p className="productPrice">{product.price}원</p>
+                    <img className="likeButton" src="./images/icons/heart.png" />
                   </div>
                   </Link>
                 </div>
@@ -85,8 +85,8 @@ function MainPage() {
 
         <footer>
           <div id="footerLogo">
-            <h1 class="baramFooter">BARAM</h1>
-            <h2 class="baramPhrase">더 나은 성분에 대한 바람</h2>
+            <h1 className="baramFooter">BARAM</h1>
+            <h2 className="baramPhrase">더 나은 성분에 대한 바람</h2>
           </div>
           <div id="footerMenu">
             <a>문의하기</a>

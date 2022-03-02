@@ -1,24 +1,24 @@
 header {
-  width: 100%;
-  height: 170px;
+  width: 100vw;
+  height: 200px;
   background-color: #9ce0cf;
 }
 
 #headerLine {
-  width: 100%;
+  width: 100vw;
   height: 30px;
   background-color: cadetblue;
 }
 
 #headerMenu {
-  width: 100%;
+  width: 100vw;
   height: 50px;
   display: flex;
   justify-content: center;
 }
 
 #leftSpace {
-  width: 33%;
+  width: 33vw;
 }
 
 #navigationBar {
@@ -42,7 +42,6 @@ header {
 
 #userMenu {
   width: 33%;
-  /*background-color: beige;*/
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -57,7 +56,6 @@ header {
 
 #headerBottom {
   width: 100%;
-  /*background-color: aquamarine;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -192,7 +190,7 @@ body {
 }
 
 footer {
-  width: 100%;
+  width: 100vw;
   height: 200px;
   /*background-color: #9ce0cf;*/
   background-color: cadetblue;
