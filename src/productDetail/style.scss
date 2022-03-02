@@ -63,13 +63,8 @@
     justify-content: space-between;
     position: relative;
   }
-<<<<<<< HEAD:src/productDetail/productDetail.css
-  
-  #minisearchBox {
-=======
 
   #searchBox {
->>>>>>> a76b99b9dd8630393a729d300700142c48517709:src/productDetail/style.scss
     width: 250px;
     height: 30px;
     background-color: white;
@@ -81,15 +76,6 @@
     display: flex;
   }
 
-<<<<<<< HEAD:src/productDetail/productDetail.css
-  .minisearchButton {
-      width: 30px;
-      height: 30px;
-      border: 0px;
-      background: white;
-      outline: none;
-      float: right;
-=======
   #searchButton {
     width: 30px;
     height: 30px;
@@ -97,7 +83,6 @@
     background: white;
     outline: none;
     float: right;
->>>>>>> a76b99b9dd8630393a729d300700142c48517709:src/productDetail/style.scss
   }
 
   input {
