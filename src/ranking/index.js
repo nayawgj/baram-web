@@ -7,9 +7,7 @@ function Ranking() {
   const [products, setProducts] = React.useState([]);
   React.useEffect(function () {
     axios
-      .get(
-        "https://c83ab4f8-341f-4104-a6ee-7689882bf922.mock.pstmn.io/products"
-      )
+      .get("http://localhost:8080/products")
       .then(function (result) {
         console.log("통신 결과: ", result);
         const products = result.data.products;

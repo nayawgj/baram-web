@@ -7,9 +7,7 @@ function MainPage() {
   const [products, setProducts] = React.useState([]);
   React.useEffect(function () {
     axios
-      .get(
-        "http://localhost:8080/products"
-      )
+      .get("http://localhost:8080/products")
       .then(function (result) {
         console.log("통신 결과: ", result);
         const products = result.data.products;
