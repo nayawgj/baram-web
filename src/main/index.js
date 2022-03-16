@@ -75,13 +75,13 @@ function MainPage() {
             <div className="product1">
               <Link className="productDetailLink" to={"/productDetail"}>
                 <div class="productImage">
-                  <img src={product.imageUrl} />
+                  <img src={product.productImage} />
                 </div>
-                <a class="productName">{product.name}</a>
-                <p class="productMaker">{product.maker}</p>
+                <a class="productName">{product.productName}</a>
+                <p class="productMaker">{product.productMaker}</p>
               </Link>
               <div class="productFooter">
-                <p class="productPrice">{product.price}원</p>
+                <p class="productPrice">{product.productPrice}원</p>
                 <img class="likeButton" src="./images/icons/heart.png" />
               </div>
             </div>
