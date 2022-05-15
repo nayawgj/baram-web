@@ -3,7 +3,7 @@ import "./index.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-function MainPage() {
+function LoginPage() {
   const [products, setProducts] = React.useState([]);
   React.useEffect(function () {
     axios
@@ -42,53 +42,36 @@ function MainPage() {
             </Link>
             <p class="mypage">MYPAGE</p>
           </div>
-          <div id="rightSpace"></div>
         </div>
-
         <div id="headerBottom">
           <div id="logo">
             <h1 class="baram">BARAM</h1>
-            <div id="bigSearchBox">
-              <input
-                type="text"
-                placeholder="찾고 싶은 상품을 검색하세요"
-                maxlength="200"
-              />
-              <button class="searchButton">
-                <img src="./images/icons/loupe.png" />
-              </button>
-            </div>
           </div>
         </div>
       </header>
-
-      <div id="banner">
-        <img src="./images/products/banner1.png" />
-      </div>
-      <hr />
-      <div id="userRecommend">
-        <h1>00님 이거 어때요?</h1>
-      </div>
-      <hr />
-
       <div id="contents">
-        {products.map(function (product, index) {
-          return (
-            <div className="product1">
-              <Link className="productDetailLink" to={"/productDetail"}>
-                <div class="productImage">
-                  <img src={product.productImage} />
-                </div>
-                <a class="productName">{product.productName}</a>
-                <p class="productMaker">{product.productMaker}</p>
-              </Link>
-              <div class="productFooter">
-                <p class="productPrice">{product.productPrice}원</p>
-                <img class="likeButton" src="./images/icons/heart.png" />
-              </div>
-            </div>
-          );
-        })}
+        <div class="loginBox">
+          <h2 class="loginText">로그인</h2>
+          <div class="idBox">
+            <p id="idLabel">ID</p>
+            <input
+              type="text"
+              placeholder="아이디를 입력하세요"
+              maxlength="15"
+            />
+          </div>
+          <div class="pwBox">
+            <p id="pwLabel">PW</p>
+            <input
+              type="password"
+              placeholder="비밀번호를 입력하세요"
+              maxlength="20"
+            />
+          </div>
+          <button type="submit" class="loginButton">
+            Login
+          </button>
+        </div>
       </div>
 
       <footer>
@@ -108,4 +91,4 @@ function MainPage() {
   );
 }
 
-export default MainPage;
+export default LoginPage;

@@ -3,6 +3,7 @@ import MainPageComponent from "./main";
 import { Switch, Route } from "react-router-dom";
 import ProductDetail from "./productDetail";
 import Ranking from "./ranking";
+import LoginPage from "./login";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route exact={true} path="/ranking">
           <Ranking />
+        </Route>
+        <Route exact={true} path="/login">
+          <LoginPage />
         </Route>
       </Switch>
     </div>

@@ -37,7 +37,9 @@ function Ranking() {
           </div>
           <div id="userMenu">
             <p class="like">LIKE</p>
-            <p class="login">LOGIN</p>
+            <Link className="loginLink linkStyle" to={"/login"}>
+              <p class="login">LOGIN</p>
+            </Link>
             <p class="mypage">MYPAGE</p>
           </div>
         </div>
